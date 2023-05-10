@@ -1,4 +1,6 @@
 import requests
+
+
 def buscarPokemon():
     pokemon = input(
         'Digite o número ou nome do Pokémon que deseja pesquisar: ')
@@ -32,4 +34,6 @@ def buscarPokemon():
                 f"Evolution(s): {[evolution_data['species']['name'] for evolution_data in chain['evolves_to']]}")
     else:
         print('Pokémon não encontrado.')
+
+
 buscarPokemon()
